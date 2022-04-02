@@ -1,13 +1,15 @@
 <template>
 <HeaderMain />
     <div class="container">
-      <div v-if="showForm">
+      <div class="auth">
+        <div v-if="showForm">
         <SignUp />
         <h3 @click="showForm = false">Есть аккаунт?</h3>
       </div>
       <div v-else>
           <Login />
           <h3 @click="showForm = true">Нет аккаунта?</h3>
+      </div>
       </div>
     </div>
 </template>
@@ -23,8 +25,9 @@ const showForm = ref(true)
 </script>
 
 <style lang="scss" scoped>
-h3{
-    margin:20px 0 0 68%;
+.auth{
+  margin-top: 50px;
+  h3{
     width: 120px;
     font-style: normal;
     cursor: pointer;
@@ -32,6 +35,8 @@ h3{
     font-size: 16px;
     line-height: 19px;
     text-decoration-line: underline;
+    margin:30px 0 0 540px;
     color: #252525;
+}
 }
 </style>

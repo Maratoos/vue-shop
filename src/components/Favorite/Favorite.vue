@@ -83,7 +83,6 @@ line-height: 19px;
 color: #252525;
 }
 .favorite {
-    margin: 60px 0 0 -195px; 
     &-h4 {
     @include cartStyleFt;
     margin: 30px 0;

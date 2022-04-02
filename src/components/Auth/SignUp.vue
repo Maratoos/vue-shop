@@ -25,7 +25,6 @@ color: #252525;
 font-family: 'Raleway';
 }
 form{
-  margin:50px 0 0 51%;
   h2{
     @include cartStyleFt;
     font-size: 20px;
@@ -44,7 +43,7 @@ form{
       input:last-child{
         margin-top: 20px;
         display: flex;
-        justify-content: start;
+        margin-left: 400px;
       }
     }
     button{
@@ -53,7 +52,7 @@ form{
       height: 50px;
       @include cartStyleFt;
       color: #FFFFFF;
-      margin:20px 0 0 420px;
+      margin:20px 0 0 0;
       cursor: pointer;
       background-color: #e0bea2;
       border: none;

@@ -1,11 +1,10 @@
 <template>
-  asdasd
+<Contacts />
 </template>
 
-<script>
-export default {
+<script setup>
+import Contacts from '../components/Contacts/Contacts.vue'
 
-}
 </script>
 
 <style>
