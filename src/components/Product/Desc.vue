@@ -71,31 +71,33 @@ const mores = [
   </div>
 </template>
 
-<style>
-.desc-h4 {
-  margin-bottom: 20px;
-}
-.subtitle {
+<style lang="scss">
+.desc{
+  &-h4{
+    margin-bottom: 20px;
+  }
+  .subtitle {
   position: relative;
   border-bottom: 0.3px solid #252525;
   margin-top: 40px;
-}
-.subtitle-p {
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-.subtitle-svg {
-  position: absolute;
-  top: 0;
-  right: 15px;
-  transform: rotate(0);
-}
-.subtitle-svg.active {
-  transform: rotate(180deg);
-}
-.desc-description-div {
-  margin: 25px 0 20px 0;
-  display: flex;
-  flex-direction: column;
+    &-p{
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    &-svg{
+      position: absolute;
+      top: 0;
+      right: 15px;
+      transform: rotate(0);
+    }
+    &-svg.active{
+      transform: rotate(180deg);
+    } 
+    .desc-description-div {
+      margin: 25px 0 20px 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 </style>

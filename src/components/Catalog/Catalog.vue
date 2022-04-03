@@ -1,16 +1,21 @@
 <template>
   <div class="container">
      <div class="catalog">
-        <SideLeft />
+      <Route />
+      <SideTop />
+      <SideLeft />
      </div>
   </div>
 </template>
 
 <script setup>
 import SideLeft from './SideLeft.vue'
+import SideTop from './SideTop.vue'
+import Route from './Route.vue'
+
 </script>
 
-<style>
+<style lang="scss">
 
 </style>
 

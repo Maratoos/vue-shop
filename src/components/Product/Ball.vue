@@ -12,11 +12,11 @@ import baigeIcon from "@/assets/svgs/baige-ball.svg";
   </div>
 </template>
 
-<style>
-.ball {
-  margin: 20px 0;
-}
-.ball-img {
+<style lang="scss">
+.ball{
+  margin: 20px 0; 
+  &-img {
   margin: 0 5px;
+}
 }
 </style>

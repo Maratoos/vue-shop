@@ -17,7 +17,7 @@ setup() {
         {
           id: 1,
           label: "NEW",
-          path: "/new",
+          path: "/catalog",
         },
         {
           id: 2,
