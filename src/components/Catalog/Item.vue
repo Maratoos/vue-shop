@@ -2,7 +2,9 @@
  <div class="catalog__items">
   <div v-for="item in catalogItems" :key="item.id" class="catalog__items-item">
     <div class="add-to-fav">
-      <img class="main-img" :src="item.src" alt="">
+      <router-link to="/product">
+        <img class="main-img" :src="item.src" alt="">
+      </router-link>
       <img class="favbutt" :src="favbutt" alt="">
     </div>
     <div class="options">

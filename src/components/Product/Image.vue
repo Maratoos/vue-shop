@@ -5,14 +5,14 @@ import favIcon from "@/assets/pngs/favIcon.png";
 
 const items = [
   {
-    img: "https://images.wbstatic.net/big/new/10220000/10223921-1.jpg",
+    img: "https://fv20.failiem.lv/thumb_show.php?i=7kvhex8mw&view",
     title: "Белая куртка",
     new: "new",
     price: 2900,
     size: "XXS XS S M L",
   },
   {
-    img: "https://images.wbstatic.net/big/new/21560000/21569576-1.jpg",
+    img: "https://fv20.failiem.lv/thumb_show.php?i=3vs9jwnr8&view",
     title: "Синее пальто",
     price: 3150,
     size: "XXS XS S",

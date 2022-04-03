@@ -5,27 +5,27 @@ import favIcon from "@/assets/pngs/favIcon.png";
 
 const items = [
   {
-    img: "https://instagram.ffru7-1.fna.fbcdn.net/v/t51.2885-15/271332003_1259514674556870_579644425494082335_n.jpg?stp=dst-jpg_e35_p480x480&_nc_ht=instagram.ffru7-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=alBGTMoIB8EAX-yhrDp&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=Mjc0NDU0NTg1NzYyODM3Nzk3Mw%3D%3D.2-ccb7-4&oh=00_AT8oqKfMEnqb7I77M881DYky1_KZxjJogmpHnNmxSGcDWA&oe=62463DE7&_nc_sid=30a2ef",
+    img: "https://fv20.failiem.lv/thumb_show.php?i=7kvhex8mw&view",
     title: "Белая куртка",
     new: "new",
     price: 2900,
     size: "XXS XS S M L",
   },
   {
-    img: "https://instagram.ffru7-1.fna.fbcdn.net/v/t51.2885-15/272184988_718909922847891_2010446396995250568_n.jpg?stp=dst-jpg_e35_p480x480&_nc_ht=instagram.ffru7-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=8zxlhQ3WJO8AX9xfknn&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=Mjc1NjAxNTQyMjA2NTM1NTA3Mg%3D%3D.2-ccb7-4&oh=00_AT8NaPSWewobxWE4UaiaKNgjGQcBq26hkVBjrzBJAQw07A&oe=624614D6&_nc_sid=30a2ef",
+    img: "https://fv20.failiem.lv/thumb_show.php?i=3vs9jwnr8&view",
     title: "Синее пальто",
     price: 3150,
     size: "XXS XS S",
   },
   {
-    img: "https://instagram.ffru7-1.fna.fbcdn.net/v/t51.2885-15/271332003_1259514674556870_579644425494082335_n.jpg?stp=dst-jpg_e35_p480x480&_nc_ht=instagram.ffru7-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=alBGTMoIB8EAX-yhrDp&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=Mjc0NDU0NTg1NzYyODM3Nzk3Mw%3D%3D.2-ccb7-4&oh=00_AT8oqKfMEnqb7I77M881DYky1_KZxjJogmpHnNmxSGcDWA&oe=62463DE7&_nc_sid=30a2ef",
+    img: "https://fv20.failiem.lv/thumb_show.php?i=7kvhex8mw&view",
     title: "Белая куртка",
     new: "new",
     price: 2900,
     size: "XXS XS S M L",
   },
   {
-    img: "https://instagram.ffru7-1.fna.fbcdn.net/v/t51.2885-15/272184988_718909922847891_2010446396995250568_n.jpg?stp=dst-jpg_e35_p480x480&_nc_ht=instagram.ffru7-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=8zxlhQ3WJO8AX9xfknn&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=Mjc1NjAxNTQyMjA2NTM1NTA3Mg%3D%3D.2-ccb7-4&oh=00_AT8NaPSWewobxWE4UaiaKNgjGQcBq26hkVBjrzBJAQw07A&oe=624614D6&_nc_sid=30a2ef",
+    img: "https://fv20.failiem.lv/thumb_show.php?i=3vs9jwnr8&view",
     title: "Синее пальто",
     price: 3150,
     size: "XXS XS S",
