@@ -20,6 +20,6 @@ export default {
 
 <style>
 .header__logo{
-    padding: 24px 93.91px 0 0;
+    margin: -50px 0 0 70px;
 }
 </style>

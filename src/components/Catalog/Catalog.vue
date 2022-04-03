@@ -8,10 +8,17 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import SideLeft from './SideLeft.vue'
 import SideTop from './SideTop.vue'
 import Route from './Route.vue'
+export default {
+  components: { Route, SideTop, SideLeft },
+  setup() {
+
+    return {}
+  }
+}
 
 </script>
 

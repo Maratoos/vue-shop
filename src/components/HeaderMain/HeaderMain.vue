@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="container">
     <Menu />
     <Nav />
     <Logo />
@@ -25,9 +25,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 </style>

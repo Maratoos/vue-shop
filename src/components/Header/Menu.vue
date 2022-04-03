@@ -16,7 +16,9 @@ export default {
 
 <style lang="scss">
     .header__menu{
-        padding: 33px 104px 0 0;
+        display: flex;
+        justify-content: start;
+        padding-top: 33px;
         svg{
             cursor: pointer;
         }

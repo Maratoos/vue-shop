@@ -43,7 +43,7 @@ setup() {
 
 <style lang="scss">
 .header__icons{
-    padding: 32px 0 0 220px;
+    margin: -70px -920px 0 0;
     a{
     img{
     margin-right: 30px;

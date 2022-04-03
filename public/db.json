@@ -1,0 +1,88 @@
+{
+  "clothes":[
+    {
+    "id": 0,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=rgfgxteg9&view",
+    "name": "Пальто ручной работы",
+    "price": 5500,
+    "sizes": "XS S M"
+    },
+    {
+    "id": 1,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=627p9db2w&view",
+    "name": "Дубленка-авиатор",
+    "price": 2500,
+    "sizes": "XS S M L"
+    },
+    {
+    "id": 2,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=m27qxcw62&view",
+    "name": "Черная куртка",
+    "price": 2450,
+    "sizes": "XS S M L"
+    },
+    {
+    "id": 3,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=4vy4k2ev8&view",
+    "name": "Бежевая шуба",
+    "price": 6200,
+    "sizes": "XXS XS S M L"
+    },
+    {
+    "id": 4,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=gtmserua4&view",
+    "name": "Белое пальто",
+    "price": 6500,
+    "sizes": "S M L"
+    },
+    {
+    "id": 5,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=7kvhex8mw&view",
+    "name": "Белая куртка",
+    "price": 2800,
+    "sizes": "XS S M L"
+    },
+    {
+    "id": 6,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=c4rdge8cd&view",
+    "name": "Бежевая куртка",
+    "price": 2950,
+    "sizes": "XXS XS S M L"
+    },
+    {
+    "id": 7,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=g2mwtcwus&view",
+    "name": "Дубленка-авиатор",
+    "price": 2500,
+    "sizes": "XXS XS S"
+    },
+    {
+    "id": 8,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=qhcr7x3xx&view",
+    "name": "Синяя парка",
+    "price": 2500,
+    "sizes": "XXS XS S M L"
+    },
+    {
+    "id": 9,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=dkcynygna&view",
+    "name": "Карамельная куртка",
+    "price": 1880,
+    "sizes": "XXS XS S M L"
+    },
+    {
+    "id": 10,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=3vs9jwnr8&view",
+    "name": "Синее пальто",
+    "price": 4100,
+    "sizes": "XXS S L"
+    },
+    {
+    "id": 11,
+    "imageUrl": "https://fv20.failiem.lv/thumb_show.php?i=m9y7h4f4d&view",
+    "name": "Куртка в бежевом оттенке",
+    "price": 2000,
+    "sizes": "XXS XS S M L"
+    }
+  ]
+}

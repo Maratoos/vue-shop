@@ -14,12 +14,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-    .header__menu{
-        padding: 33px 104px 0 0;
-        svg{
-            cursor: pointer;
-        }
-    }
+<style>
+
     
 </style>

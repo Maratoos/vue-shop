@@ -38,7 +38,6 @@ setup() {
 
 <style lang="scss" scoped>
 .header__routes{
-    padding: 34px 120px 0 0;
         ul{
         display: flex;
         }

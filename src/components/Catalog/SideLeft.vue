@@ -6,15 +6,26 @@
    </ul>
    </div>
    <div class="catalog__left-items">
-      <Item />
+      <Item :clothes="clothes" />
    </div>
 </div>
 </template>
 
-<script setup>
+<script>
 import Item from './Item.vue'
+import { computed, onMounted } from '@vue/runtime-core'
+import { useStore } from 'vuex'
+export default {
+   components: { Item },
+   setup() {
+   const store = useStore()
+    const clothes  = computed(() => store.state.clothes)
+    
+    onMounted(() => {
+      store.dispatch('getClothes')
+    });
 
-    const sidebars = [
+   const sidebars = [
     'New',
     'Bestsellers',
     'Верхняя одежда',
@@ -32,7 +43,11 @@ import Item from './Item.vue'
     'Sale',
     'Summer',
     'Посмотреть всё'
-    ]
+   ]
+
+      return { sidebars, clothes }
+   }
+}
 
 </script>
 

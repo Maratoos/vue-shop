@@ -20,6 +20,6 @@ export default {
 
 <style scoped>
 .header__logo{
-    padding: 24px 93.91px 0 0;
+    padding:0 93.91px 0 0;
 }
 </style>

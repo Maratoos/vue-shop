@@ -1,7 +1,7 @@
 <template>
 <div class="header__routes">
     <ul>
-        <li v-for="item in routeItems" :key="item.id">
+        <li v-for="item in navItems" :key="item.id">
             <router-link :to="item.path">
                 {{item.label}}
             </router-link>
@@ -13,7 +13,7 @@
 <script>
 export default {
 setup() {
-    const routeItems = [
+    const navItems = [
         {
           id: 1,
           label: "NEW",
@@ -31,14 +31,14 @@ setup() {
         }
         ]
 
-    return { routeItems }
+    return { navItems }
  }
 }
 </script>
 
 <style lang="scss">
 .header__routes{
-    padding: 34px 120px 0 0;
+        margin: -40px 0 0 104px;
         ul{
         display: flex;
         }
