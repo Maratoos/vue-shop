@@ -6,7 +6,9 @@
    </ul>
    </div>
    <div class="catalog__left-items">
+     <div class="catalog__items">
       <Item :clothes="clothes" />
+     </div>
    </div>
 </div>
 </template>
@@ -76,5 +78,11 @@ export default {
      }
   }
   }
+}
+.catalog__items{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 30px 0 0 80px;
 }
 </style>

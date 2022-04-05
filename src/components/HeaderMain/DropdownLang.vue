@@ -1,5 +1,6 @@
 <template>
-  <ul>
+ <div>
+    <ul>
     <div @click="handleShowDropdownFirst" class="dropdowns__arrow">
     <span>{{langItems[activeItemFirst]}}</span>
       <svg width="10" height="7" viewBox="0 0 10 7" fill="#252525" xmlns="http://www.w3.org/2000/svg">
@@ -14,6 +15,7 @@
       :key="langItem">{{langItem}}</li>
    </div>
   </ul>
+ </div>
 </template>
 
 <script setup>

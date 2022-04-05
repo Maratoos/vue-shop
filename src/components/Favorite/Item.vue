@@ -1,15 +1,15 @@
 <template>
-  <div v-for="clothe in clothes" :key="clothe.id" class="catalog__items-item">
+  <div class="favorite__items-item">
     <div class="add-to-fav">
-        <img class="main-img" :src="clothe.imageUrl" alt="">
+        <img class="main-img" :src="parksN" alt="">
       <img class="favbutt" :src="favbutt" alt="">
     </div>
     <div class="options">
       <router-link to="/product">
-        <span>{{clothe.name}}</span>
+        <span>Синяя парка</span>
       </router-link>
-      <h5>{{clothe.price}} грн</h5>
-      <p>{{clothe.sizes}}</p>
+      <h5>2900 грн</h5>
+      <p>XXS XS S M L</p>
     </div>
     <img class="dots-img" :src="dots" alt="">
   </div>
@@ -18,13 +18,11 @@
 <script>
 import dots from '@/assets/svgs/dots.svg'
 import favbutt from '@/assets/svgs/fav-butt.svg'
-import { useStore } from 'vuex'
+import parksN from '@/assets/pngs/parksN.png'
 export default {
-  props: ["clothes"],
 setup() {
-  const store = useStore()
 
-  return { dots, favbutt }
+return { dots, favbutt, parksN }
 }
 }
 </script>
@@ -37,7 +35,7 @@ font-size: 16px;
 line-height: 19px;
 color: #252525;
 }
-  .catalog__items-item{
+  .favorite__items-item{
     margin: 0 15px 30px 0;
     width: 310px;
     height: 461px;

@@ -43,7 +43,7 @@ export default {
 .route{
     display: flex;
     padding: 30px 0;
-    margin-right: 770px;
+    margin-left: -10px;
     h4 a{
     font-style: normal;
     font-weight: 300;

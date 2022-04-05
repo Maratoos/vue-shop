@@ -8,52 +8,21 @@
             </router-link>
             <img :src="item.src" alt="">
         </h5>
-        </div>
- <div class="favorite">
-    <h4 class="favorite-h4">Избранное</h4>
-    <div class="favorite-content">
-      <div v-for="item in items" :key="item" class="favorite-item">
-        <img class="item-fav" :src="favIcon" alt="" />
-        <router-link to="/product">
-          <img class="favorite-img" :src="item.img" alt="" />
-        </router-link>
-        <div class="favorite-title">
-          <span>{{ item.title }}</span>
-          <p class="favorite-p">{{ item.new }}</p>
-        </div>
-        <p class="favorite-price">{{ item.price }} грн</p>
-        <p class="favorite-size">{{ item.size }}</p>
-        <Ball />
-      </div>
     </div>
-  </div>
+   <div class="favorite__items">
+     <Item /><Item /><Item /><Item /><Item /><Item /><Item /><Item />
+   </div>
 </div>
 </template>
 
 <script>
 import arrow from '@/assets/svgs/arrow.svg'
-import imageIcon from "@/assets/pngs/image1.png";
-import Ball from "../Product/Ball.vue";
-import favIcon from "@/assets/pngs/favIcon.png";
 import HeaderMain from '../HeaderMain/HeaderMain.vue'
+import Item from '@/components/Favorite/Item.vue'
 export default {
-components: { HeaderMain, Ball },
+components: { HeaderMain, Item},
 setup() {
-    const items = [
-  {
-    img: "https://fv20.failiem.lv/thumb_show.php?i=7kvhex8mw&view",
-    title: "Белая куртка",
-    new: "new",
-    price: 2900,
-    size: "XXS XS S M L",
-  },
-  {
-    img: "https://fv20.failiem.lv/thumb_show.php?i=3vs9jwnr8&view",
-    title: "Синее пальто",
-    price: 3150,
-    size: "XXS XS S",
-  },
-]
+
     const routeItems = [
             {
                 id: 1,
@@ -69,7 +38,7 @@ setup() {
             }
     ]
 
-return { items, favIcon, imageIcon, routeItems }
+return {  routeItems, }
 }
 }
 </script>
@@ -82,63 +51,11 @@ font-size: 16px;
 line-height: 19px;
 color: #252525;
 }
-.favorite {
-    &-h4 {
-    @include cartStyleFt;
-    margin: 30px 0;
-    text-align: left;
-    font-size: 20px;
-    line-height: 23px;
-    }
-    &-content {
-    display: flex;
-        .favorite-item {
-        position: relative;
-         margin-left: 15px;
-        }
-        .item-fav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        }
-        .favorite-item:first-child {
-         margin: 0;
-        }
-        .favorite-img {
-        width: 370px;
-        height: 400px;
-        }
-        .favorite-title {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-        span{
-            @include cartStyleFt;
-        }
-            .favorite-p {
-            font-weight: 700;
-            color: #e0bea2;
-            margin: 0 10px;
-            }
-        }    
-        .favorite-price {
-        margin: 5px 0;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        color: #252525;
-        }
-        .faavorite-size{
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-color: rgba(37, 37, 37, 0.5);
-        }
-    }
+.favorite__items{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0 0 0;
 }
 .favorite__route{
 display: flex;

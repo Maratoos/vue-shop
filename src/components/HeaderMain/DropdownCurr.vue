@@ -1,5 +1,6 @@
 <template>
-  <ul>
+  <div class="stayhere">
+    <ul>
     <div @click="handleShowDropdownSecond" class="dropdowns__arrow">
     <span>{{currItems[activeItemSecond]}}</span>
       <svg width="10" height="7" viewBox="0 0 10 7" fill="#252525" xmlns="http://www.w3.org/2000/svg">
@@ -14,6 +15,7 @@
       :key="currItem">{{currItem}}</li>
    </div>
   </ul>
+  </div>
 </template>
 
 <script setup>
@@ -34,5 +36,7 @@ import { ref } from '@vue/reactivity'
 </script>
 
 <style>
-
+.stayhere{
+  
+}
 </style>
