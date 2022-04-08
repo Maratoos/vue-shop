@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="last">
     <div @click="handleShowDropdownSecond" class="dropdown__arrow">
     <span>{{currItems[activeItemSecond]}}</span>
       <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,6 +33,11 @@ import { ref } from '@vue/reactivity'
     }
 </script>
 
-<style>
+<style lang="scss">
+@media (max-width:576px) {
+  .last{
+    display: none;
+  }
+}
 
 </style>

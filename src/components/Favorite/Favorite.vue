@@ -10,7 +10,10 @@
         </h5>
     </div>
    <div class="favorite__items">
-     <Item /><Item /><Item /><Item /><Item /><Item /><Item /><Item />
+     <Item />
+     <Item />
+     <Item />
+     <Item />
    </div>
 </div>
 </template>
@@ -22,6 +25,7 @@ import Item from '@/components/Favorite/Item.vue'
 export default {
 components: { HeaderMain, Item},
 setup() {
+    
 
     const routeItems = [
             {

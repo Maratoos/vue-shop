@@ -23,5 +23,14 @@ export default {
             cursor: pointer;
         }
     }
+    @media (max-width:576px) {
+        .header__menu{
+            margin-top: -25px;
+            svg{
+                width: 34px;
+                height: 24px;
+            }
+        }
+    }
     
 </style>

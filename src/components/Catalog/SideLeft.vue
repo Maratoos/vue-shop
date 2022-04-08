@@ -7,7 +7,9 @@
    </div>
    <div class="catalog__left-items">
      <div class="catalog__items">
-      <Item :clothes="clothes" />
+      <div v-for="clothe in clothes" :key="clothe.id" class="catalog__items-item">
+      <Item :clothe="clothe" />
+      </div>
      </div>
    </div>
 </div>
@@ -21,7 +23,7 @@ export default {
    components: { Item },
    setup() {
    const store = useStore()
-    const clothes  = computed(() => store.state.clothes)
+   const clothes = computed(() => store.state.clothes)
     
     onMounted(() => {
       store.dispatch('getClothes')
@@ -84,5 +86,10 @@ export default {
   flex-wrap: wrap;
   width: 1000px;
   margin: 30px 0 0 80px;
+  &-item{
+   margin: 0 15px 90px 0;
+    width: 310px;
+    height: 461px;
+  }
 }
 </style>

@@ -1,5 +1,4 @@
 <template>
-  <div v-for="clothe in clothes" :key="clothe.id" class="catalog__items-item">
     <div class="add-to-fav">
         <img class="main-img" :src="clothe.imageUrl" alt="">
       <img class="favbutt" :src="favbutt" alt="">
@@ -12,19 +11,31 @@
       <p>{{clothe.sizes}}</p>
     </div>
     <img class="dots-img" :src="dots" alt="">
-  </div>
+    <div class="catalog__btn">
+      <button @click="handleAddClotheToCart">
+        <span>Заказать</span>
+        <i v-if="addedClotheCount">{{addedClotheCount}}</i>
+      </button>
+    </div>
 </template>
 
 <script>
 import dots from '@/assets/svgs/dots.svg'
 import favbutt from '@/assets/svgs/fav-butt.svg'
 import { useStore } from 'vuex'
+import { computed } from '@vue/runtime-core'
 export default {
-  props: ["clothes"],
-setup() {
+  props: ["clothe"],
+setup(props) {
   const store = useStore()
 
-  return { dots, favbutt }
+  const addedClotheCount = computed(() => store.state.cartItems.get(props.clothe.id)?.count)
+
+  const handleAddClotheToCart = () => {
+    store.commit('ADD_CLOTHE_TO_CART', props.clothe)
+  }
+
+  return { dots, favbutt, handleAddClotheToCart, addedClotheCount }
 }
 }
 </script>
@@ -37,10 +48,6 @@ font-size: 16px;
 line-height: 19px;
 color: #252525;
 }
-  .catalog__items-item{
-    margin: 0 15px 30px 0;
-    width: 310px;
-    height: 461px;
     .add-to-fav{
       height: 375px;
       .main-img{
@@ -66,6 +73,27 @@ color: #252525;
       p{
         @include itemStyle;
         margin-bottom: 5px;
+      }
+    }
+  
+   .catalog__btn{
+     margin-top: 15px;
+    button{
+      cursor: pointer;
+      background-color: #e0bea2;
+      border: none;
+      padding: 16px 50px;
+      &:hover{
+      background-color: #f1ddaa;
+      }
+      span{
+      @include itemStyle;
+      color: white;
+      }
+      i{
+        margin-left: 20px;
+      @include itemStyle;
+      color: white;
       }
     }
   }

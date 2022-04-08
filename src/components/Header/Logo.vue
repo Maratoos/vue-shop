@@ -18,8 +18,17 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .header__logo{
     margin: -50px 0 0 70px;
+}
+@media (max-width:576px) {
+    .header__logo{
+        margin:-25px 830px 0 0;
+        a svg{
+            width: 79px;
+            height: 20px;
+        }
+    }
 }
 </style>

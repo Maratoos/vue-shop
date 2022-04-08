@@ -44,5 +44,11 @@ line-height: 21px;
     color: #E0BEA2;
   }
 }
+@media (max-width:576px) {
+  .dropdown{
+    top: -1px;
+    right: 280px;
+  }
+}
 
 </style>

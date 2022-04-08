@@ -57,4 +57,18 @@ setup() {
     }
     }
 }
+@media (max-width: 576px) {
+    .header__icons{
+        margin: -55px 780px 0 0;
+      a{
+        img{
+            width: 16px;
+            height: 16px;
+        }
+      }
+      a:first-child{
+        display: none;
+      }
+    }
+}
 </style>

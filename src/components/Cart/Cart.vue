@@ -13,14 +13,12 @@
         <span>Ваш заказ</span>
     </div>
         <div class="cart__items">
-            <Item />
-            <Item />
+            <Item v-for="clotheItem in cartItems" :key="clotheItem.id" :clotheItem="clotheItem[1]" />
             <div class="cart__total">
-            <h4 v-for="item in totalItems" :key="item">{{item}}</h4>
+            <h4>К оплате: {{totalPrice ? totalPrice: 0}} грн</h4>
             </div>
         </div>
     <Checkout />
-    
   </div>
 </div>
 </template>
@@ -29,12 +27,18 @@
 import arrow from '@/assets/svgs/arrow.svg'
 import Item from './Item.vue'
 import Checkout from '@/components/Cart/Checkout.vue'
+import { useStore } from 'vuex'
+import { computed } from '@vue/runtime-core'
 export default {
     components:{ Item, Checkout },
     setup() {
-        const totalItems = ['К оплате:', '15250 грн']
+    const store = useStore()
 
-        const routeItems = [
+    const cartItems = computed(() => store.state.cartItems)
+
+    const totalPrice = computed(() => store.getters.totalSumOfClothes)
+
+    const routeItems = [
             {
                 id: 1,
                 label: 'Главная',
@@ -47,9 +51,9 @@ export default {
                 path: '/cart',
                 src: ''
             }
-        ]
+    ]
 
-        return { totalItems, routeItems, arrow }
+        return { routeItems, cartItems, totalPrice }
     }
 
 }

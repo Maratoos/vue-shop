@@ -60,4 +60,9 @@ setup() {
             color: #E0BEA2;
         }
     }
+    @media (max-width:576px) {
+        .header__routes{
+            display: none;
+        }
+    }
 </style>
