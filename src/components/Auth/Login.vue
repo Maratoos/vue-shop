@@ -1,18 +1,32 @@
 <script setup>
 import { ref } from "@vue/reactivity";
+import useLogin from '../../composables/uselogin'
+
+
+const successLogin = defineEmits(['successLogin'])
 
 const email = ref('')
 const password = ref('')
 
+const handleSubmit = async () => {
+  const { error, login } = useLogin();
+  await login(email.value, password.value);
+
+  if(!error.value) {
+    successLogin('successLogin')
+  } else {
+    console.log(error.value);
+  }
+}
+
 </script>
 
 <template>
-     <form>
-       <h2>Авторизация</h2>
+     <form @submit.prevent="handleSubmit">
       <input v-model="email" type="email" required placeholder="Ваш e-mail*">
       <input v-model="password" type="password" required placeholder="Ваш пароль*">
+      <button>Войти</button>
     </form>
-    <button>Войти</button>
 </template>
 
 <style lang="scss" scoped>
@@ -25,12 +39,6 @@ color: #252525;
 font-family: 'Raleway';
 }
 form{
-  h2{
-    @include cartStyleFt;
-    font-size: 20px;
-    line-height: 23px;
-    margin-bottom: 30px;
-  }
   input{
     border: 0.5px solid #252525;
     box-sizing: border-box; 
@@ -38,13 +46,9 @@ form{
     height: 50px;
     padding: 16px 0 15px 19px ;
     @include cartStyleFt;
-    opacity: 0.8
-      }
-      input:last-child{
-        margin-top: 20px;
-        display: flex;
-        margin-left: 400px;
-      }
+    opacity: 0.8;
+    margin-right: 20px;
+    }
     }
     button{
       margin:20px 0 0 0;

@@ -1,18 +1,29 @@
 <script setup>
 import { ref } from "@vue/reactivity";
-
+import { signup } from '../../composables/useSignup'
 
 const email = ref('')
 const password = ref('')
+
+const successSignup = defineEmits(['successSignup'])
+
+const handleSubmit = async () => {
+  const { error } = await signup(email.value,password.value);
+
+  if(!error.value) {
+    successSignup('successSignup')
+  } else {
+    console.log(error.value);
+  }
+}
 </script>
 
 <template>
-     <form>
-       <h2>Регистрация</h2>
+     <form @submit.prevent="handleSubmit">
       <input v-model="email" type="email" required placeholder="Ваш e-mail*">
       <input v-model="password" type="password" required placeholder="Ваш пароль*">
+      <button>Зарегистрироваться</button>
     </form>
-    <button>Зарегистрироваться</button>
 </template>
 
 <style lang="scss" scoped>
@@ -24,13 +35,8 @@ line-height: 19px;
 color: #252525;
 font-family: 'Raleway';
 }
-form{
-  h2{
-    @include cartStyleFt;
-    font-size: 20px;
-    line-height: 23px;
-    margin-bottom: 30px;
-  }
+  form{
+    
   input{
     border: 0.5px solid #252525;
     box-sizing: border-box; 
@@ -38,15 +44,11 @@ form{
     height: 50px;
     padding: 16px 0 15px 19px ;
     @include cartStyleFt;
-    opacity: 0.8
-      }
-      input:last-child{
-        margin-top: 20px;
-        display: flex;
-        margin-left: 400px;
-      }
+    opacity: 0.8;
+    margin-right: 20px;
     }
-    button{
+  }
+  button{
       text-transform: uppercase;
       width: 400px;
       height: 50px;
@@ -59,6 +61,6 @@ form{
       &:hover{
       background-color: #f1ddaa;
     }
-  }
+    }
 
 </style>
